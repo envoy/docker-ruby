@@ -24,7 +24,9 @@ RUN apk --update --upgrade add --no-cache \
         ca-certificates \
         imagemagick \
         ghostscript \
-        file && \
+        file \
+        tar \
+        gzip && \
         rm /var/cache/apk/*
 
 CMD ["irb"]
